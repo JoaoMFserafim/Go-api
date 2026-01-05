@@ -1,0 +1,29 @@
+### criar Task
+POST http://localhost:8888/task
+Content-Type: application/json
+
+{
+    "title": "tarefa",
+    "description": "descrição",
+    "status": false,
+    "id": 0
+}
+
+### listar tasks 
+GET http://localhost:8888/task
+
+### Listar uma task com id
+GET http://localhost:8888/task/9
+
+### Editar Task
+PUT  http://localhost:8888/task/9
+
+{
+    "title": "tarefa",
+    "description": "exemplo",
+    "status": true
+}
+
+###Editar status task
+
+PUT http://localhost:8888/task/9/status
